@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/layoutBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bgsearch_view"
+        android:drawableLeft="@drawable/dgoogle"
+        android:drawablePadding="15dp"		
+        android:ems="10"       
+        android:hint="Search Something..."
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp" />
+
+    <com.asksira.webviewsuite.WebViewSuite
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:enableHorizontalScrollBar="false"
+        app:enableJavaScript="true"
+        app:enableVerticalScrollBar="false"
+        app:inflationDelay="100"
+        app:overrideEmailLink="true"
+        app:overridePdfLink="true"
+        app:overrideTelLink="true"
+        app:showZoomControl="false"
+        app:webViewProgressBarStyle="linear" />
+
+</LinearLayout>
